@@ -1,0 +1,1 @@
+This code is simple to run, just run the .sh file to run the code for the linear regression problem.
