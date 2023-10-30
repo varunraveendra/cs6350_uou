@@ -242,7 +242,7 @@ def baggingdecisiontree(train_data,test_data,subdatasz,rep,T):
   for i in range(1,T+1):
     iter.append(i)
     subset = train_data.sample(n=subdatasz, replace=rep)
-    t=buildTree(subset,50000,0)
+    t=buildTree(0,subset,50000,0)
     #resultstr.append(t)
     #print(i)
   # return resultstr
@@ -269,7 +269,7 @@ def adaboostdecisiontree(train_data,test_data,T):
   currentadate=np.zeros(len(test_data))
   for i in range(1,T+1):
     iter.append(i)
-    t=buildTree(train_data,2,0)
+    t=buildTree(0,train_data,2,0)
     alpt,trerror=evaluate_and_update_weights(t,train_data)
     testerr=evaluate(t,test_data)
     sterror.append(trerror)
