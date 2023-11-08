@@ -100,6 +100,6 @@ print(w2,'Voted Perceptron Weights')
 print(w3,'Averaged Perceptron Weights')
 
 print(prediction_standard_averaged(test_data,w1),'Standard test error')
-print(prediction_standard_averaged(test_data,w2),'Averaged test error')
+print(prediction_standard_averaged(test_data,w3),'Averaged test error')
 print(prediction_voted(test_data,w2),'Voted test error')
 
