@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 header=['age','job','martial','education','default','balance','housing','loan','contact','day','month','duration','campaign','pdays','previous','poutcome','label']
-train_data=pd.read_csv('/bank-4/train.csv',names=header)
-test_data=pd.read_csv('/bank-4/test.csv',names=header)
+train_data=pd.read_csv('bank-4/train.csv',names=header)
+test_data=pd.read_csv('bank-4/test.csv',names=header)
 
 def preprocess_bankdata(train_data):
  numeric_cols = train_data.select_dtypes(include=['int', 'float']).columns.tolist()

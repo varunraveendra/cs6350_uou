@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-data=pd.read_csv('/concrete+slump+test/data.csv')
+data=pd.read_csv('concrete+slump+test/data.csv')
 data=data.drop(columns=data.columns[-2:],axis=1)
 data=data.drop(columns='No',axis=1)
 

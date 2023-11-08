@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-data1=pd.read_csv('/default+of+credit+card+clients/default of credit card clients.csv',header=0)
+data1=pd.read_csv('default+of+credit+card+clients/default of credit card clients.csv',header=0)
 
 data1.columns=data1.iloc[0]
 data1 = data1[1:]
